@@ -7,12 +7,14 @@ class Customprojects extends StatelessWidget {
   final String subTitle;
   final String percentText;
   final Color myColor;
+  final Color containerColor;
 
   const Customprojects({
     required this.title,
     required this.subTitle,
     required this.percentText,
     required this.myColor,
+    required this.containerColor,
     super.key,
   });
 
@@ -21,7 +23,7 @@ class Customprojects extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        color: const Color.fromARGB(255, 52, 83, 109)
+        color: containerColor
       ),
       height: 150,
       width: 120,

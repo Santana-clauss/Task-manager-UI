@@ -40,7 +40,9 @@ class MyDashboard extends StatelessWidget {
                             "images/profile.png",
                             height: 100,
                           ),
-                          SizedBox(height: 20,),
+                          SizedBox(
+                            height: 20,
+                          ),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -67,11 +69,14 @@ class MyDashboard extends StatelessWidget {
                           fontSize: 25,
                           color: Color.fromARGB(255, 27, 49, 86))),
                   Container(
+                    height: 30,
                     decoration: BoxDecoration(
                       color: Colors.green.shade50,
-                      borderRadius: BorderRadius.circular(16),
+                      borderRadius: BorderRadius.circular(20),
                     ),
-                    child: Icon(Icons.task),
+                    child: Icon(
+                      Icons.task,
+                    ),
                   ),
                 ],
               ),
@@ -105,7 +110,8 @@ class MyDashboard extends StatelessWidget {
                 children: [
                   Text(
                     "Active Projects",
-                    style: TextStyle(color: Color.fromARGB(255, 27, 49, 86),fontSize: 25),
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 27, 49, 86), fontSize: 25),
                   ),
                 ],
               ),
@@ -117,24 +123,28 @@ class MyDashboard extends StatelessWidget {
                 //alignment: WrapAlignment.spaceAround,
                 children: [
                   Customprojects(
+                      containerColor: Color.fromARGB(255, 178, 58, 49),
                       title: "Medical App",
                       subTitle: "9 hours progress",
                       percentText: "80%",
                       myColor: Color.fromARGB(255, 27, 118, 105)),
                   Customprojects(
+                      containerColor: Color.fromARGB(255, 25, 96, 154),
                       title: "Making Notes",
                       subTitle: "20 hours progress",
                       percentText: "60%",
                       myColor: Color.fromARGB(255, 127, 32, 25)),
                   Customprojects(
+                      containerColor: Color.fromARGB(198, 179, 137, 14),
                       title: "Finance App",
                       subTitle: "1 hour progress",
                       percentText: "20%",
-                      myColor: Colors.amber),
+                      myColor: Colors.black),
                   Customprojects(
-                      title: "Finance App",
+                      containerColor: Color.fromARGB(255, 27, 111, 29),
+                      title: "Workout App",
                       subTitle: "1 hour progress",
-                      percentText: "20%",
+                      percentText: "50%",
                       myColor: Colors.amber),
                 ],
               ),

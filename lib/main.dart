@@ -1,5 +1,8 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:task_manager/pages/dash.dart';
+import 'package:task_manager/pages/transcation.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
      debugShowCheckedModeBanner: false,
-      home: MyDashboard()
+      home: Transcations()
     );
   }
 }
