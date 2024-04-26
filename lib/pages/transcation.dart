@@ -38,7 +38,7 @@ class Transcations
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  customButton(buttonLabel:"Deposit",buttonColor: Colors.blue,),
+                  customButton(buttonLabel:"Deposit",buttonColor: Colors.bluet ,),
                   customButton(buttonLabel: "Send Money"),
                   customButton(buttonLabel: "Pay Bills"),
                 ],
