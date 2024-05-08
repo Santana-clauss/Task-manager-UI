@@ -4,6 +4,7 @@ import 'dart:convert';
 import 'package:fitness_app/config/constants.dart';
 import 'package:fitness_app/views/custombutton.dart';
 import 'package:fitness_app/views/customtext.dart';
+import 'package:fitness_app/views/customtextfield.dart';
 import 'package:flutter/material.dart';
 
 import 'package:http/http.dart' as http;
@@ -70,12 +71,12 @@ class LoginScreen extends StatelessWidget {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
-                              customtitleText(label: "phone"),
+                              customText(label: "phone"),
                               customTextField(
                                 userFieldController: phoneController,
                                 icon: Icons.phone,
                               ),
-                              customtitleText(label: "Password"),
+                              customText(label: "Password"),
                               customTextField(
                                 userFieldController: passwordController,
                                 hint: "Password",
@@ -119,7 +120,7 @@ class LoginScreen extends StatelessWidget {
   }
 
   void gotoRegister() {
-    Get.offAllNamed("/");
+    //Get.offAllNamed("/");
   }
 
 //   
