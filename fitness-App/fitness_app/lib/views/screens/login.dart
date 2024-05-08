@@ -1,13 +1,10 @@
 // ignore_for_file: unused_local_variable, must_be_immutable, avoid_print, prefer_const_constructors
 
 import 'dart:convert';
+import 'package:fitness_app/config/constants.dart';
+import 'package:fitness_app/views/custombutton.dart';
+import 'package:fitness_app/views/customtext.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_todolist/config/constant.dart';
-import 'package:flutter_todolist/views/custombutton.dart';
-import 'package:flutter_todolist/views/customtext.dart';
-import 'package:flutter_todolist/views/customtextfield.dart';
-
-import 'package:get/get.dart';
 
 import 'package:http/http.dart' as http;
 
@@ -96,9 +93,9 @@ class LoginScreen extends StatelessWidget {
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 children: [
-                                  customtitleText(label: "Don't have an account?"),
+                                  customText(label: "Don't have an account?"),
                                   GestureDetector(
-                                    child: customtitleText(
+                                    child: customText(
                                       label: "Sign up here",
                                       labelColor: orangeColor,
                                       //onTap: gotoRegister,
